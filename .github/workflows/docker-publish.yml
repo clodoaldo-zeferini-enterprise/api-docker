@@ -26,8 +26,10 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         context: .
+        file: ./src/API/Dockerfile  # Especifique o caminho correto para o Dockerfile
         push: true
-        tags: api-docker:latest
+        tags: seu-usuario-docker/api-docker:latest
+
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
