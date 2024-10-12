@@ -25,10 +25,10 @@ jobs:
       # Build the Docker image
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/my-app:${{ github.sha }} .
+          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/api-docker:${{ github.sha }} .
 
       # Push the Docker image to ACR
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.ACR_LOGIN_SERVER }}/my-app:${{ github.sha }}
+          docker push ${{ secrets.ACR_LOGIN_SERVER }}/api-docker:${{ github.sha }}
 
