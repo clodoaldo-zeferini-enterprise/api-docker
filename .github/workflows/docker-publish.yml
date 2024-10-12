@@ -26,11 +26,7 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         context: .
-<<<<<<< HEAD
-        file: src/API/API/Dockerfile  # Especifique o caminho correto para o Dockerfile
-=======
         file: src/SLN/API/API/Dockerfile  # Especifique o caminho correto para o Dockerfile
->>>>>>> feature/segunda
         push: true
         tags: zeferinidotdev/api-docker:latest
 
