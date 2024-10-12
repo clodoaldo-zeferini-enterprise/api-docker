@@ -28,7 +28,7 @@ jobs:
         context: .
         file: ./src/API/Dockerfile  # Especifique o caminho correto para o Dockerfile
         push: true
-        tags: seu-usuario-docker/api-docker:latest
+        tags: zeferinidotdev/api-docker:latest
 
 
     - name: Image digest
