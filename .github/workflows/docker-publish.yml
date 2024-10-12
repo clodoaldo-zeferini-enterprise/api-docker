@@ -26,7 +26,7 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         context: .
-        file: ./src/API/Dockerfile  # Especifique o caminho correto para o Dockerfile
+        file: src/SLN/API/API/Dockerfile  # Especifique o caminho correto para o Dockerfile
         push: true
         tags: zeferinidotdev/api-docker:latest
 
