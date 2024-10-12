@@ -12,7 +12,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["API/API.csproj", "API/"]
-COPY ["MyLib/MyLib.csproj", "MyLib/"]
+COPY ["API/MyLib/MyLib.csproj", "MyLib/"]
 RUN dotnet restore "./API/API.csproj"
 COPY . .
 WORKDIR "/src/API"
